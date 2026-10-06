@@ -1,0 +1,113 @@
+/* ===== PC (diseño base) ===== */
+.pagina {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.encabezado {
+  background: #ff7f27;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #888;
+}
+
+.menu {
+  background: #7094c0;
+  padding: 8px;
+  border: 2px solid #888;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: #fff;
+}
+
+.zona-central {
+  background: #22b14c;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px;
+  padding: 15px;
+  border: 2px solid #888;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.articulo {
+  background: #3f48cc;
+  color: #fff;
+  padding: 25px;
+  border: 2px solid #888;
+}
+
+.lateral {
+  background: #a349a4;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid #888;
+}
+
+.pie {
+  background: #000;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid #888;
+}
+
+/* ===== TABLET (hasta 1024px) ===== */
+@media (max-width: 1024px) {
+  .pagina {
+    max-width: 768px;
+  }
+
+  .zona-central {
+    grid-template-columns: 1fr;
+  }
+
+  .contenido {
+    flex-direction: row;
+  }
+
+  .articulo {
+    flex: 1;
+  }
+
+  .encabezado {
+    height: 100px;
+  }
+}
+
+/* ===== MÓVIL (hasta 600px) ===== */
+@media (max-width: 600px) {
+  .encabezado {
+    height: 80px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .contenido {
+    flex-direction: column;
+  }
+
+  .pie {
+    padding: 15px;
+  }
+}
