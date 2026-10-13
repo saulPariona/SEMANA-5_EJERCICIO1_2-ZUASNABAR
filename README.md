@@ -2,13 +2,6 @@
 
 Este repositorio contiene la solución a un laboratorio de desarrollo web enfocado en la estructuración de componentes, diseño responsivo con CSS puro y la transmisión de datos en React utilizando Vite como entorno de desarrollo.
 
----
-
-## Captura del Proyecto
-
-![Ejercicios de Laboratorio](./assets/tu-imagen.png)
-
----
 
 ## Descripción de los Ejercicios
 
